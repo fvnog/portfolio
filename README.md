@@ -1,59 +1,64 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 Fernando Nogueira | Full Stack Engineer Portfolio
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
 </p>
 
-## About Laravel
+## 📌 Sobre o Projeto
+Este é um ecossistema de portfólio moderno focado em demonstrar integrações reais de engenharia. Mais do que um site estático, é uma **API Playground** que expõe microserviços de automação, processamento de dados e inteligência artificial.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Tech Stack & Diferenciais
+- **Backend:** Laravel 11 (PHP 8.2+) com Attributes nativos.
+- **Documentação:** Swagger (L5 Swagger) com documentação OpenAPI 3.0.
+- **Frontend:** Tailwind CSS v4 + Vite + Blade Components.
+- **Automações:** Integração com Evolution API (Node.js) para WhatsApp Webhooks.
+- **Cloud:** Arquitetura preparada para AWS (S3, EC2).
 
-## Learning Laravel
+## 🎮 API Playground (Microserviços)
+O portfólio inclui um terminal interativo para testar:
+* **WPP_API:** Disparo de mensagens via Evolution API e tracking de status.
+* **JSON_CONV:** Conversor de estruturas de dados (JSON to PHP Array).
+* **IMG_PROC:** Processamento de imagem e remoção de background.
+* **WEATHER_SYNC:** Proxy de geolocalização e dados climáticos em tempo real.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🚀 Instalação Local
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```bash
+# Clone o repositório
+git clone [https://github.com/fvnog/portfolio.git](https://github.com/fvnog/portfolio.git)
 
-## Laravel Sponsors
+# Instale as dependências
+composer install
+npm install
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+# Configure o ambiente
+cp .env.example .env
+php artisan key:generate
 
-### Premium Partners
+# Gere a documentação Swagger
+php artisan l5-swagger:generate
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Inicie o ecossistema
+npm run dev
+php artisan serve
+📈 Experiência em Destaque
+Plox Brasil: Arquitetura de sistemas escaláveis para portais de notícias.
 
-## Contributing
+Automações de Marketing: Integração avançada com Google Ads API e bots de WhatsApp inteligentes.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Cloud Computing: Experiência com gerenciamento de instâncias e buckets AWS.
 
-## Code of Conduct
+💬 Contato
+GitHub: @fvnog
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+LinkedIn: [Seu Link Aqui]
 
-## Security Vulnerabilities
+Site: plox.com.br
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p align="center">Desenvolvido com ☕ e 🛠️ por Fernando Nogueira.</p>
