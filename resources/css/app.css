@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+    --color-neon-emerald: #10b981;
+}
+
+/* No Tailwind v4, use @utility para classes customizadas complexas */
+@utility glass {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility neon-text {
+    filter: drop-shadow(0 0 8px currentColor);
+}
+
+
+@utility tab-btn {
+    @apply px-4 py-2 font-mono text-xs text-slate-500 rounded-lg hover:text-white transition cursor-pointer;
+}
+
+@utility active-tab {
+    @apply bg-emerald-500/10 text-emerald-500 border border-emerald-500/20;
+}
+
+@utility input-field {
+    @apply w-full bg-slate-900/50 border border-slate-700 rounded-xl p-4 font-mono text-sm focus:border-emerald-500 outline-none text-emerald-400 transition;
+}
+
+@utility btn-execute {
+    @apply w-full py-4 bg-transparent border border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-slate-950 transition font-black rounded-xl tracking-widest text-xs cursor-pointer;
+}
+
+/* Estilos Globais */
+@layer base {
+    html { 
+        scroll-behavior: smooth; 
+    }
+    body { 
+        background-color: #020617; /* Fallback */
+        background-image: radial-gradient(circle at top right, #0f172a, #020617);
+        min-height: 100vh;
+        color: #cbd5e1; /* text-slate-300 */
+    }
+    ::selection {
+        background-color: #10b981;
+        color: white;
+    }
+}
+
+.experience-card:hover {
+    border-color: rgba(16, 185, 129, 0.5);
+    transition: all 0.3s ease;
+    background-color: rgba(15, 23, 42, 0.4);
+}

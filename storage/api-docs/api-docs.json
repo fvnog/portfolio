@@ -1,0 +1,154 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Fernando Portfolio API",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000",
+            "description": "Servidor Local"
+        }
+    ],
+    "paths": {
+        "/api/v1/convert": {
+            "post": {
+                "tags": [
+                    "Converter"
+                ],
+                "summary": "Converte JSON/PHP",
+                "operationId": "e16ffb2a509185a62d05b4f2e35f6f92",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/image/remove-bg": {
+            "post": {
+                "tags": [
+                    "Image"
+                ],
+                "summary": "Remove fundo de imagem",
+                "operationId": "9ce3805c2792b554fc42ece531ffc0bf",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/convert": {
+            "post": {
+                "tags": [
+                    "Ferramentas"
+                ],
+                "summary": "Converte dados entre formatos",
+                "operationId": "cf6bb171a64589d6ff693f9f202c502b",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "content": {
+                                        "type": "string",
+                                        "example": "{\"name\": \"Fernando\"}"
+                                    },
+                                    "format": {
+                                        "type": "string",
+                                        "example": "json_to_php_array"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Sucesso"
+                    },
+                    "400": {
+                        "description": "Erro"
+                    }
+                }
+            }
+        },
+        "/api/v1/weather/{city}": {
+            "get": {
+                "tags": [
+                    "Weather"
+                ],
+                "summary": "Busca clima atual",
+                "operationId": "e9ef4278fa7c1e73244e3cd77de70f98",
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/whatsapp/send": {
+            "post": {
+                "tags": [
+                    "WhatsApp"
+                ],
+                "summary": "Dispara msg via Evolution API",
+                "operationId": "0a2fa9240fb51fbf0014c8112210f94c",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/whatsapp/status": {
+            "get": {
+                "tags": [
+                    "WhatsApp"
+                ],
+                "summary": "Check Evolution API Status",
+                "operationId": "a34496f3e2687505401384ec6a5d3a29",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Converter",
+            "description": "Converter"
+        },
+        {
+            "name": "Image",
+            "description": "Image"
+        },
+        {
+            "name": "Ferramentas",
+            "description": "Ferramentas"
+        },
+        {
+            "name": "Weather",
+            "description": "Weather"
+        },
+        {
+            "name": "WhatsApp",
+            "description": "WhatsApp"
+        }
+    ]
+}
