@@ -57,8 +57,6 @@ Cloud Computing: Experiência com gerenciamento de instâncias e buckets AWS.
 💬 Contato
 GitHub: @fvnog
 
-LinkedIn: [Seu Link Aqui]
-
-Site: plox.com.br
+LinkedIn: https://www.linkedin.com/in/fernando-nogueira-developer/
 
 <p align="center">Desenvolvido com ☕ e 🛠️ por Fernando Nogueira.</p>
